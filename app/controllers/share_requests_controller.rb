@@ -1,9 +1,14 @@
 class ShareRequestsController < ApplicationController
+  before_action :authenticate_member!
   before_action :set_share_request, only: [:show, :edit, :update, :destroy]
 
   # GET /share_requests
   # GET /share_requests.json
   def index
+    unless member_signed_in?
+      redirect_to :controller => 'devise/sessions', :action => 'new'
+    end
+
     @share_requests = ShareRequest.all
   end
 
@@ -15,6 +20,7 @@ class ShareRequestsController < ApplicationController
   # GET /share_requests/new
   def new
     @share_request = ShareRequest.new
+    @share_request.member_id = current_member.id
   end
 
   # GET /share_requests/1/edit
