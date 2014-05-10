@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510033648) do
+ActiveRecord::Schema.define(version: 20140510034903) do
 
   create_table "members", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -30,5 +30,16 @@ ActiveRecord::Schema.define(version: 20140510033648) do
 
   add_index "members", ["email"], name: "index_members_on_email", unique: true
   add_index "members", ["reset_password_token"], name: "index_members_on_reset_password_token", unique: true
+
+  create_table "share_requests", force: true do |t|
+    t.string   "title"
+    t.datetime "eventDate"
+    t.text     "description"
+    t.integer  "member_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "share_requests", ["member_id"], name: "index_share_requests_on_member_id"
 
 end

@@ -1,0 +1,2 @@
+module ShareRequestsHelper
+end

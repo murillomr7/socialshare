@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @share_request.title %>
+</p>
+
+<p>
+  <strong>Eventdate:</strong>
+  <%= @share_request.eventDate %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @share_request.description %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @share_request.member %>
+</p>
+
+<%= link_to 'Edit', edit_share_request_path(@share_request) %> |
+<%= link_to 'Back', share_requests_path %>
