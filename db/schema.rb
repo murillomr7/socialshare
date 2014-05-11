@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140511030928) do
+ActiveRecord::Schema.define(version: 20140511153727) do
 
   create_table "contributions", force: true do |t|
     t.decimal  "amount"
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20140511030928) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "name"
   end
 
   add_index "members", ["email"], name: "index_members_on_email", unique: true
