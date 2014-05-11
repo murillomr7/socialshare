@@ -5,10 +5,6 @@ class ShareRequestsController < ApplicationController
   # GET /share_requests
   # GET /share_requests.json
   def index
-    unless member_signed_in?
-      redirect_to :controller => 'devise/sessions', :action => 'new'
-    end
-
     @share_requests = ShareRequest.all
   end
 
