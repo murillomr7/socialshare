@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510042557) do
+ActiveRecord::Schema.define(version: 20140511030928) do
 
   create_table "contributions", force: true do |t|
     t.decimal  "amount"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(version: 20140510042557) do
     t.integer  "member_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.decimal  "value"
   end
 
   add_index "share_requests", ["member_id"], name: "index_share_requests_on_member_id"

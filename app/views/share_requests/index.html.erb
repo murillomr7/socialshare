@@ -4,6 +4,7 @@
   <thead>
     <tr>
       <th>Title</th>
+      <th>Value</th>
       <th>Eventdate</th>
       <th>Description</th>
       <th>Member</th>
@@ -15,6 +16,7 @@
     <% @share_requests.each do |share_request| %>
       <tr>
         <td><%= share_request.title %></td>
+        <td><%= share_request.value %></td>
         <td><%= share_request.eventDate %></td>
         <td><%= share_request.description %></td>
         <td><%= share_request.member %></td>

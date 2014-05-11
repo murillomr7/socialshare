@@ -71,6 +71,6 @@ class ShareRequestsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def share_request_params
-      params.require(:share_request).permit(:title, :eventDate, :description, :member_id)
+      params.require(:share_request).permit(:title, :value, :eventDate, :description, :member_id)
     end
 end
