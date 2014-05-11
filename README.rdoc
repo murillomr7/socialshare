@@ -1,28 +1,6 @@
-== README
+== SOCIAL SHARE
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Social Share facilitates the organization of quotas when we want buy something and we need the collaboration of our friends :-D
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Ruby version: <tt>ruby 2.1.1</tt>
+* Rails version: <tt>Rails 4.1.1</tt>
