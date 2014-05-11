@@ -15,7 +15,7 @@
       <tr>
         <td><%= contribution.amount %></td>
         <td><%= contribution.share_request.title %></td>
-        <td><%= contribution.member.email %></td>
+        <td><%= contribution.member.name %></td>
         <td><%= link_to 'Show', contribution %></td>
         <td><%= link_to 'Edit', edit_contribution_path(contribution) %></td>
         <td><%= link_to 'Destroy', contribution, method: :delete, data: { confirm: 'Are you sure?' } %></td>

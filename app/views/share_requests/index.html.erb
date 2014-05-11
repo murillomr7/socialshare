@@ -19,7 +19,7 @@
         <td><%= share_request.value %></td>
         <td><%= share_request.eventDate %></td>
         <td><%= share_request.description %></td>
-        <td><%= share_request.member %></td>
+        <td><%= share_request.member.name %></td>
         <td><%= link_to 'Show', share_request %></td>
         <td><%= link_to 'Edit', edit_share_request_path(share_request) %></td>
         <td><%= link_to 'Destroy', share_request, method: :delete, data: { confirm: 'Are you sure?' } %></td>
