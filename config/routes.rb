@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :contributions
+
   resources :share_requests
 
   devise_for :members

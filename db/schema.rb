@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140510034903) do
+ActiveRecord::Schema.define(version: 20140510042557) do
+
+  create_table "contributions", force: true do |t|
+    t.decimal  "amount"
+    t.integer  "share_request_id"
+    t.integer  "member_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "contributions", ["member_id"], name: "index_contributions_on_member_id"
+  add_index "contributions", ["share_request_id"], name: "index_contributions_on_share_request_id"
 
   create_table "members", force: true do |t|
     t.string   "email",                  default: "", null: false
