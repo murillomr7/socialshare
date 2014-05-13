@@ -37,5 +37,7 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
- 
+
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
+
+gem 'bower-rails', '~> 0.7.2'
