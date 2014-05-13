@@ -10,6 +10,7 @@ Social Share facilitates the organization of quotas when we want to buy somethin
 
 * [node](http://nodejs.org) ([on github](https://github.com/joyent/node))
 * [bower](https://github.com/bower/bower) (>= 0.10.0) installed with npm
+* [devise](http://devise.plataformatec.com.br) ([on github](https://github.com/plataformatec/devise))
 
 **Install**
 
