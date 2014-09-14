@@ -40,4 +40,4 @@ gem 'spring',        group: :development
 
 gem 'devise', :git => 'https://github.com/plataformatec/devise.git'
 
-gem 'bower-rails', '~> 0.7.2'
+gem 'bower-rails', '~> 0.7.3'
